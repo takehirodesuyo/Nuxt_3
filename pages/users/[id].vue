@@ -4,6 +4,11 @@ const route = useRoute();
 const message = "/users/_id.vueを表示";
 const id = route.params.id;
 
+const validate = (id) => {
+  console.log(id);
+  return /^\d+$/.test(id);
+};
+
 onMounted(() => {
   validate(id);
 });
