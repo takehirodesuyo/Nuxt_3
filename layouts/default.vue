@@ -4,11 +4,14 @@ const index = "index";
 </script>
 
 <template>
-  <div>{{ index }}</div>
+  <div>
+    <div class="test">test</div>
+    <div>{{ index }}</div>
+  </div>
 </template>
 
 <style>
-html {
-  font-size: 100000px;
+.test {
+  color: red;
 }
 </style>
